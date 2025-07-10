@@ -1,0 +1,20 @@
+{
+    "name": "com.br.myunityscripts",
+    "version": "0.1.0",
+    "displayName": "My Unity Scripts",
+    "description": "Implementation of basic behavior trees and extensions such as utility and extended trees.",
+    "author": {
+        "name": "EltonCN",
+        "email": "e233840@dac.unicamp.br",
+        "url": "https://github.com/EltonCN/EltonCN"
+    },
+    "license": "MIT",
+    "keywords": [
+    ],
+    "documentationUrl": "",
+    "samples": [
+    ],
+    "dependencies": {
+        "com.unity.nuget.newtonsoft-json":"3.2.1"
+    }
+}
