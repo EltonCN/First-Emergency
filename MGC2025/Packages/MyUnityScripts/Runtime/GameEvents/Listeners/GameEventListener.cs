@@ -1,9 +1,10 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
 namespace MyUnityScripts.GameEvents
-{   
+{
     /// <summary>
     /// Listener to game event that call UnityEvents when raised.
     /// </summary>
@@ -12,6 +13,7 @@ namespace MyUnityScripts.GameEvents
     {
         [Tooltip("Event to register with.")]
         [SerializeField] protected GameEvent Event;
+        [SerializeField] protected List<GameEvent> Events;
 
         [Tooltip("Time to wait before raising response, in seconds.")]
         [SerializeField] protected float delay = 0;
@@ -19,7 +21,7 @@ namespace MyUnityScripts.GameEvents
         [Tooltip("Response to invoke when Event is raised.")]
         [SerializeField] UnityEvent Response;
 
-        
+
 
         /// <summary>
         /// Register listener to the event.
@@ -27,6 +29,11 @@ namespace MyUnityScripts.GameEvents
         private void OnEnable()
         {
             Event.RegisterListener(this);
+            foreach (GameEvent gEvent in Events)
+            {
+                gEvent.RegisterListener(this);
+            }
+
         }
 
         /// <summary>
@@ -35,6 +42,10 @@ namespace MyUnityScripts.GameEvents
         private void OnDisable()
         {
             Event.UnregisterListener(this);
+            foreach (GameEvent gEvent in Events)
+            {
+                gEvent.UnregisterListener(this);
+            }
         }
 
         /// <summary>
@@ -43,11 +54,11 @@ namespace MyUnityScripts.GameEvents
         /// <param name="eventName">Name of the raised GameEvent.</param>
         public void OnEventRaised(string eventName)
         {
-            if(gameObject.activeInHierarchy)
+            if (gameObject.activeInHierarchy)
             {
                 StartCoroutine("RaiseResponse");
             }
-            
+
         }
 
         /// <summary>
@@ -58,12 +69,12 @@ namespace MyUnityScripts.GameEvents
         /// <param name="arg">Argument</param>
         public void OnEventRaised<T>(string eventName, T arg)
         {
-            if(gameObject.activeInHierarchy)
+            if (gameObject.activeInHierarchy)
             {
                 IEnumerator coroutine = RaiseResponse<T>(arg);
                 StartCoroutine(coroutine);
             }
-            
+
         }
 
         /// <summary>
@@ -71,11 +82,11 @@ namespace MyUnityScripts.GameEvents
         /// </summary>
         protected virtual IEnumerator RaiseResponse()
         {
-            if(delay > 0)
+            if (delay > 0)
             {
                 yield return new WaitForSeconds(delay);
             }
-            
+
             Response.Invoke();
         }
 
@@ -86,10 +97,10 @@ namespace MyUnityScripts.GameEvents
         /// <param name="arg">Argument</param>
         protected virtual IEnumerator RaiseResponse<T>(T arg)
         {
-            if(delay > 0)
+            if (delay > 0)
             {
                 yield return new WaitForSeconds(delay);
-            }        
+            }
             Response.Invoke();
         }
     }
