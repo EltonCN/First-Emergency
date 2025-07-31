@@ -1,0 +1,19 @@
+{
+  "name": "br.unicamp.medicalsimulator",
+  "displayName": "Medical Simulator",
+  "version": "0.1.0",
+  "description": "Tool for medical simulation.",
+  "author": {
+    "name": "EltonCN",
+    "email": "e233840@dac.unicamp.br",
+    "url": "https://github.com/EltonCN/EltonCN"
+  },
+  "license": "MIT",
+  "keywords": [],
+  "documentationUrl": "",
+  "samples": [],
+  "dependencies": {
+    "com.unity.graphtoolkit": "0.1.0-exp.1"
+  },
+  "unity": "6000.2"
+}

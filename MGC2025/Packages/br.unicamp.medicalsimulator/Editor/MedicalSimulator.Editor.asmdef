@@ -1,0 +1,22 @@
+{
+    "name": "UNICAMP.MedicalSimulator.Editor",
+    "rootNamespace": "UNICAMP.MedicalSimulator.Editor",
+    "references": [
+        "Unity.GraphToolkit.Common.Editor",
+        "Unity.GraphToolkit.Utility.Editor",
+        "Unity.GraphToolkit.Editor",
+        "UNICAMP.MedicalSimulator",
+        "MyUnityScripts"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

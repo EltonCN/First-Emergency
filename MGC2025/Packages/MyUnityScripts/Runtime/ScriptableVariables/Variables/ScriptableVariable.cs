@@ -3,12 +3,18 @@ using UnityEngine.Events;
 
 namespace MyUnityScripts.ScriptableVariables
 {
+    public abstract class ScriptableVariable : ScriptableObject
+    {
+        // Common functionality, no generics here
+    }
+
     /// <summary>
     /// Scriptable object that stores values.
     /// </summary>
-    public class ScriptableVariable<T> : ScriptableObject
+    public class ScriptableVariable<T> : ScriptableVariable
     {
-        [SerializeProperty("Value")][SerializeField]
+        [SerializeProperty("Value")]
+        [SerializeField]
         T _value;
 
         /// <summary>

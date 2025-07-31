@@ -1,0 +1,16 @@
+{
+    "name": "UNICAMP.MedicalSimulator",
+    "rootNamespace": "UNICAMP.MedicalSimulator",
+    "references": [
+        "GUID:3fb5a323aa1f5324b8ab24228fc128ce"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

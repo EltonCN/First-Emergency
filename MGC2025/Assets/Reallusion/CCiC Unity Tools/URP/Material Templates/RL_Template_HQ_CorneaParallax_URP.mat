@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 9
+  version: 10
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -28,6 +28,7 @@ Material:
   - BOOLEAN_ISCORNEA_ON
   m_InvalidKeywords:
   - _DISABLE_SSR_TRANSPARENT
+  - _EMISSION
   - _ENABLE_FOG_ON_TRANSPARENT
   - _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 2
@@ -114,6 +115,7 @@ Material:
     - _ScleraSmoothness: 0.704
     - _ShadowHardness: 0.5
     - _ShadowRadius: 0.275
+    - _XRMotionVectorsPass: 1
     m_Colors:
     - _CornerShadowColor: {r: 1, g: 0.7333333, b: 0.6980392, a: 0}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 0}
