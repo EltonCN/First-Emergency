@@ -26449,6 +26449,7 @@ GameObject:
   - component: {fileID: 1497267055}
   - component: {fileID: 1497267054}
   - component: {fileID: 1497267053}
+  - component: {fileID: 1497267056}
   m_Layer: 0
   m_Name: ISDK_HandGrabInteraction
   m_TagString: Untagged
@@ -26550,13 +26551,34 @@ MonoBehaviour:
   _transferOnSecondSelection: 1
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
+  _oneGrabTransformer: {fileID: 1497267056}
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 1507099785}
   _maxGrabPoints: -1
   _rigidbody: {fileID: 1507099784}
   _kinematicWhileSelected: 0
   _throwWhenUnselected: 1
+--- !u!114 &1497267056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497267051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 124f4583f657475469a45ab6fca8f921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pivotTransform: {fileID: 1626231102}
+  _rotationAxis: 1
+  _constraints:
+    MinAngle:
+      Constrain: 1
+      Value: -90
+    MaxAngle:
+      Constrain: 1
+      Value: 90
 --- !u!1 &1499648897
 GameObject:
   m_ObjectHideFlags: 0
