@@ -8,13 +8,12 @@ namespace UNICAMP.MedicalSimulator.Editor
     [Serializable]
     public class PatientStateNode : ContextNode
     {
-        protected override void OnDefineOptions(INodeOptionDefinition context)
+        protected override void OnDefineOptions(IOptionDefinitionContext context)
         {
-            context.AddNodeOption<int>("priority",
-                "Priority",
-                "The state priority for multiple simulators of same variable. Minimum is higher priority.",
-                defaultValue: 0);
-
+            context.AddOption<int>("priority")
+                .WithDisplayName("Priority")
+                .WithTooltip("The state priority for multiple simulators of same variable. Minimum is higher priority.")
+                .WithDefaultValue(0);
         }
 
         protected override void OnDefinePorts(IPortDefinitionContext context)

@@ -11,9 +11,10 @@ namespace UNICAMP.MedicalSimulator.Editor
     [Serializable]
     public class CompareFloatVariableNode : BlockNode
     {
-        protected override void OnDefineOptions(INodeOptionDefinition context)
+        protected override void OnDefineOptions(IOptionDefinitionContext context)
         {
-            context.AddNodeOption<FloatOperation>("operation", "Operation");
+            context.AddOption<FloatOperation>("operation")
+            .WithDisplayName("Operation");
         }
 
         protected override void OnDefinePorts(IPortDefinitionContext context)

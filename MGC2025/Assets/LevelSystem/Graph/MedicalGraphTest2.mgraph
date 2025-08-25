@@ -912,7 +912,9 @@ MonoBehaviour:
         m_Value: 1
     - rid: 8778598312190411048
       type: {class: 'Constant`1[[StateReference, UNICAMP.MedicalSimulator]]', ns: Unity.GraphToolkit.Editor, asm: Unity.GraphToolkit.Internal.Editor}
-      data: {}
+      data:
+        m_Value:
+          name: 
     - rid: 8778598312190411049
       type: {class: InStateNode, ns: UNICAMP.MedicalSimulator.Editor, asm: UNICAMP.MedicalSimulator.Editor}
       data: 
@@ -1054,7 +1056,9 @@ MonoBehaviour:
         m_Value: 0
     - rid: 8778598312190411064
       type: {class: 'Constant`1[[StateReference, UNICAMP.MedicalSimulator]]', ns: Unity.GraphToolkit.Editor, asm: Unity.GraphToolkit.Internal.Editor}
-      data: {}
+      data:
+        m_Value:
+          name: 
     - rid: 8778598312190411065
       type: {class: InStateNode, ns: UNICAMP.MedicalSimulator.Editor, asm: UNICAMP.MedicalSimulator.Editor}
       data: 
@@ -1225,7 +1229,9 @@ MonoBehaviour:
         m_Name: CardiorespiratoryArrest
     - rid: 8778598312190411092
       type: {class: 'Constant`1[[StateReference, UNICAMP.MedicalSimulator]]', ns: Unity.GraphToolkit.Editor, asm: Unity.GraphToolkit.Internal.Editor}
-      data: {}
+      data:
+        m_Value:
+          name: 
     - rid: 8778598312190411093
       type: {class: WireModel, ns: Unity.GraphToolkit.Editor, asm: Unity.GraphToolkit.Internal.Editor}
       data:
@@ -1552,7 +1558,9 @@ MonoBehaviour:
         m_Value: 1
     - rid: 8778598312190411109
       type: {class: 'Constant`1[[StateReference, UNICAMP.MedicalSimulator]]', ns: Unity.GraphToolkit.Editor, asm: Unity.GraphToolkit.Internal.Editor}
-      data: {}
+      data:
+        m_Value:
+          name: 
     - rid: 8778598312190411110
       type: {class: InStateNode, ns: UNICAMP.MedicalSimulator.Editor, asm: UNICAMP.MedicalSimulator.Editor}
       data: 

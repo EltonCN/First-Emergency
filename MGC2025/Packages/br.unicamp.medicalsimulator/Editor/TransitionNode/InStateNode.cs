@@ -11,10 +11,15 @@ namespace UNICAMP.MedicalSimulator.Editor
     [Serializable]
     public class InStateNode : BlockNode
     {
-        protected override void OnDefineOptions(INodeOptionDefinition context)
+        protected override void OnDefineOptions(IOptionDefinitionContext context)
         {
-            context.AddNodeOption<bool>("negate", "Negate", defaultValue: false);
-            context.AddNodeOption<bool>("timed", "Timed", defaultValue: false);
+            context.AddOption<bool>("negate")
+            .WithDisplayName("Negate")
+            .WithDefaultValue(false);
+
+            context.AddOption<bool>("timed")
+            .WithDisplayName("Timed")
+            .WithDefaultValue(false);
         }
 
         protected override void OnDefinePorts(IPortDefinitionContext context)
