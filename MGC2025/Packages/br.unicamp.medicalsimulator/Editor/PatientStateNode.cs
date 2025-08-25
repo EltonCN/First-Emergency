@@ -14,6 +14,7 @@ namespace UNICAMP.MedicalSimulator.Editor
                 "Priority",
                 "The state priority for multiple simulators of same variable. Minimum is higher priority.",
                 defaultValue: 0);
+
         }
 
         protected override void OnDefinePorts(IPortDefinitionContext context)
