@@ -1,0 +1,47 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; flex-direction: row; flex-shrink: 1;">
+        <ui:Label text="Name:" style="height: 32px; width: 51px; -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&amp;guid=e3265ab4bf004d28a9537516768c1c75&amp;type=3#LiberationSans&quot;);" />
+        <ui:Label text="AAA" name="Name" style="height: 30px; width: 91px;">
+            <Bindings>
+                <ui:DataBinding property="text" binding-mode="ToTarget" data-source-path="patientName" data-source="project://database/Assets/Patient/PatientInfo.asset?fileID=11400000&amp;guid=808813119da95694798a9b6d1dbe451e&amp;type=2#PatientInfo" />
+            </Bindings>
+        </ui:Label>
+    </ui:VisualElement>
+    <ui:VisualElement name="VisualElement" style="flex-grow: 1; flex-direction: row; flex-shrink: 1;">
+        <ui:Label text="Age:" style="height: 32px; width: 51px; -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&amp;guid=e3265ab4bf004d28a9537516768c1c75&amp;type=3#LiberationSans&quot;);" />
+        <ui:Label text="AAA" name="Name" style="height: 30px; width: 91px;">
+            <Bindings>
+                <ui:DataBinding property="text" binding-mode="ToTarget" data-source-path="age" data-source="project://database/Assets/Patient/PatientInfo.asset?fileID=11400000&amp;guid=808813119da95694798a9b6d1dbe451e&amp;type=2#PatientInfo" />
+            </Bindings>
+        </ui:Label>
+    </ui:VisualElement>
+    <ui:VisualElement style="flex-grow: 1; flex-direction: row; flex-shrink: 1;">
+        <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+            <ui:Label text="Sex:" style="height: 32px; width: 51px; -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&amp;guid=e3265ab4bf004d28a9537516768c1c75&amp;type=3#LiberationSans&quot;);" />
+            <ui:Label text="AAA" name="Name" style="height: 30px; width: 91px;">
+                <Bindings>
+                    <ui:DataBinding property="text" binding-mode="ToTarget" data-source-path="sex" data-source="project://database/Assets/Patient/PatientInfo.asset?fileID=11400000&amp;guid=808813119da95694798a9b6d1dbe451e&amp;type=2#PatientInfo" />
+                </Bindings>
+            </ui:Label>
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+            <ui:Label text="Gender:" style="height: 32px; width: 51px; -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&amp;guid=e3265ab4bf004d28a9537516768c1c75&amp;type=3#LiberationSans&quot;);" />
+            <ui:Label text="AAA" name="Name" style="height: 30px; width: 91px;">
+                <Bindings>
+                    <ui:DataBinding property="text" binding-mode="ToTarget" data-source-path="gender" data-source="project://database/Assets/Patient/PatientInfo.asset?fileID=11400000&amp;guid=808813119da95694798a9b6d1dbe451e&amp;type=2#PatientInfo" />
+                </Bindings>
+            </ui:Label>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement style="flex-grow: 1; flex-shrink: 1; overflow: visible;">
+        <ui:VisualElement style="flex-grow: 1;">
+            <ui:Label text="History" style="-unity-font-style: bold;" />
+            <ui:Label text="Label" style="white-space: normal;">
+                <Bindings>
+                    <ui:DataBinding property="text" data-source-path="history" data-source="project://database/Assets/Patient/PatientInfo.asset?fileID=11400000&amp;guid=808813119da95694798a9b6d1dbe451e&amp;type=2#PatientInfo" binding-mode="ToTarget" />
+                </Bindings>
+            </ui:Label>
+        </ui:VisualElement>
+        <ui:Button text="Continue" />
+    </ui:VisualElement>
+</ui:UXML>
