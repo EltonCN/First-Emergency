@@ -1,0 +1,11 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Label text="Evaluation&#10;" style="-unity-font-style: bold;" />
+    <ui:ListView style="min-height: 100px; max-height: 100px;" />
+    <ui:VisualElement style="flex-grow: 1; flex-direction: column-reverse; max-height: 87px;">
+        <ui:Button text="Continue" style="max-height: 10px;" />
+        <ui:VisualElement style="flex-grow: 1; flex-direction: row-reverse; max-height: 31px;">
+            <ui:Label text="10" name="score" />
+            <ui:Label text="Final Score:" style="-unity-font-style: bold;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

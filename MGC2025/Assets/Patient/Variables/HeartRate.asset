@@ -17,7 +17,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   minimum:
-    enabled: 0
+    enabled: 1
     value: 0
   maximum:
     enabled: 0
