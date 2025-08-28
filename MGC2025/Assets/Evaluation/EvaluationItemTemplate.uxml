@@ -1,0 +1,6 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; flex-direction: row-reverse; max-height: 100px; min-height: 30px; align-content: flex-start;">
+        <ui:Label text="-100&#10;" name="item_score" style="max-width: 30px; min-width: 30px; -unity-text-align: upper-right;" />
+        <ui:Label text="Closed the case without investigating the cause of cardiorespiratory arrest" name="item_description" style="white-space: normal; text-overflow: clip; max-width: 225px; max-height: 100px; min-height: 30px; height: 60px; flex-wrap: wrap; align-self: flex-start; -unity-text-align: upper-left; align-items: flex-start; min-width: 225px;" />
+    </ui:VisualElement>
+</ui:UXML>

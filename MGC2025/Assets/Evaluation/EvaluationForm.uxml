@@ -1,8 +1,8 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <ui:Label text="Evaluation&#10;" style="-unity-font-style: bold;" />
-    <ui:ListView style="min-height: 100px; max-height: 100px;" />
-    <ui:VisualElement style="flex-grow: 1; flex-direction: column-reverse; max-height: 87px;">
-        <ui:Button text="Continue" style="max-height: 10px;" />
+    <ui:ListView fixed-item-height="30" allow-add="false" allow-remove="false" virtualization-method="DynamicHeight" item-template="project://database/Assets/Evaluation/EvaluationItemTemplate.uxml?fileID=9197481963319205126&amp;guid=7962891fb02c8f0438d985766cf098be&amp;type=3#EvaluationItemTemplate" style="min-height: auto; max-height: 200px; height: auto; width: auto;" />
+    <ui:VisualElement style="flex-grow: 1; flex-direction: column-reverse; max-height: 57px;">
+        <ui:Button text="Let&apos;s learn and improve!" style="max-height: 10px;" />
         <ui:VisualElement style="flex-grow: 1; flex-direction: row-reverse; max-height: 31px;">
             <ui:Label text="10" name="score" />
             <ui:Label text="Final Score:" style="-unity-font-style: bold;" />

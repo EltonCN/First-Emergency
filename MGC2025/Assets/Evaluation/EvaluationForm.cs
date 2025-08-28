@@ -1,31 +1,32 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 public class EvaluationForm : MonoBehaviour
 {
-    int totalScore = 0;
-
-    VisualElement createItem(string description, int score)
-    {
-        VisualElement ve = new();
-        ve.style.flexDirection = FlexDirection.RowReverse;
-
-        ve.Add(new Label(score.ToString()));
-        ve.Add(new Label(description));
-
-        totalScore += score;
-
-        return ve;
-    }
+    public List<EvaluationItem> items = new();
+    ListView listView;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         UIDocument document = GetComponent<UIDocument>();
 
-        ListView listView = document.rootVisualElement.Query<ListView>().AtIndex(0);
+        listView = document.rootVisualElement.Query<ListView>().AtIndex(0);
 
-        listView.Add(createItem("Test", 22));
+        listView.bindItem = (element, index) =>
+        {
+            element.Query<Label>("item_score").AtIndex(0).text = items[index].score.ToString();
+            element.Query<Label>("item_description").AtIndex(0).text = items[index].description;
+        };
+
+        listView.itemsSource = items;
+
+        float totalScore = 0;
+        foreach (EvaluationItem item in items)
+        {
+            totalScore += item.score;
+        }
 
         document.rootVisualElement.Query<Label>("score").AtIndex(0).text = totalScore.ToString();
     }
@@ -33,6 +34,6 @@ public class EvaluationForm : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        listView.Rebuild();
     }
 }
