@@ -5,7 +5,7 @@
 In **First Emergency**, medicine students can learn and put it pratice their professinoal skills. In this simulation-based application for Meta Quest 3 made with Unity, the students are going to use virtual replicas of real-world equipment to assess patients' health in predefined cases.
 
 
-## Team
+## Team - Unicampers
 
 - Elton Cardoso do Nascimento
 - Rafael Pedrosa Silva Clerici
@@ -23,7 +23,7 @@ And FEEC-UNICAMP for the support.
 ## License
 
 ```
-Copyright 2025
+Copyright 2025 Unicampers
 
 Licensed under the GNU LESSER GENERAL PUBLIC LICENSE, Version 3 (the "License");
 you may not use this file except in compliance with the License.
